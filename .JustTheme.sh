@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # edit the following to set different themes and variants
-gnome_theme_light="Adwaita-Light";
-gnome_theme_dark="Adwaita-Dark";
+gnome_theme_light="Adwaita";
+gnome_theme_dark="Adwaita-dark";
 gedit_theme_light="classic";
 gedit_theme_dark="oblivion";
 
