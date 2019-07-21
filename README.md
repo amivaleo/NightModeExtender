@@ -6,7 +6,7 @@ Download the files and give the following command from the terminal:
 
 `$ chmod +x .JustTheme.sh ; mv .JustTheme.sh ~ ; mv JustTheme.desktop ~/.config/autostart/`
 
-## Set custom theme
+## Set custom themes
 Open the script `.JustTheme.sh` and set the name of your favourite themes in the first lines.
 
 ## Credits
