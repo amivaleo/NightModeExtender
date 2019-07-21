@@ -3,7 +3,7 @@ Automatically change the theme from light to dark if the night-mode is enabled i
 
 ## Installation
 Download the files and give the following command from the terminal:
-```$ chmod +x .JustTheme.sh ; mv .JustTheme.sh ~; mv JustTheme.sh ~/.config/autostart/```
+```$ chmod +x .JustTheme.sh ; mv .JustTheme.sh ~ ; mv JustTheme.desktop ~/.config/autostart/```
 
 ## Set custom theme
 Open the script `.JustTheme.sh` and set the name of your favourite themes in the first lines.
