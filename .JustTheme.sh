@@ -6,6 +6,13 @@ gnome_theme_dark="Adwaita-dark";
 gedit_theme_light="classic";
 gedit_theme_dark="oblivion";
 
+
+file=".config/autostart/JustTheme.desktop";
+if [ ! -f "$file" ]; then
+	touch $file;
+	echo $'[Desktop Entry]\nType=Application\nExec=~/.JustTheme.sh\nHidden=false\nNoDisplay=false\nX-GNOME-Autostart-enabled=true\nName[en]=JusTheme\nName=JusTheme\nComment[en]=JusTheme\nComment=JusTheme' >> $file;
+fi
+
 while true; do
 
 	clear;
