@@ -11,7 +11,6 @@ lastmonth=0;
 lastday=0;
 currentdday=$(date +%d);
 currentmonth=$(date +%m);
-currenttime=$(date +%H:%M:%S);
 
 while true; do 
 	
@@ -34,6 +33,8 @@ while true; do
 		sunrise="$(echo $sunrise |grep -Eo '[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}')";
 		sunset="$(echo $sunset |grep -Eo '[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}')";
 	fi
+	
+	currenttime=$(date +%H:%M:%S);
 	
 	if [[ "$currenttime" > "$sunset" ]] || [[ "$currenttime" < "$sunrise" ]]; then
 		$( gsettings set org.gnome.desktop.interface gtk-theme "$gnome_theme_dark" );
