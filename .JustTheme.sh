@@ -9,8 +9,6 @@ gedit_theme_dark="oblivion";
 # default values
 lastmonth=0;
 lastday=0;
-currentdday=$(date +%d);
-currentmonth=$(date +%m);
 
 while true; do 
 	
@@ -18,6 +16,9 @@ while true; do
 		gnome_theme_light="Adwaita";
 		gnome_theme_dark="Adwaita-dark";
 	fi
+	
+	currentdday=$(date +%d);
+	currentmonth=$(date +%m);
 	
 	if [[ "$lastmonth" != "$currentmonth" ]] && [[ "$lastday" != "$currentday" ]]; then
 		lastmonth="$currentmonth";
