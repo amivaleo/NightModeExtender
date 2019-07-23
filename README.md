@@ -10,4 +10,4 @@ Download the files and give the following command from the terminal:
 Open the script `.JustTheme.sh` and set the name of your favourite themes in the first lines.
 
 ## Credits
-JustPerfection is the original author of the script that I heavenly edited. I really really really want to thank him for his help and availability. THANK YOU, JUSTPY!
+JustPerfection is the original author of the script that I slightly edited. I really really really want to thank him for his help and availability. THANK YOU, JUSTPY!
