@@ -1,11 +1,9 @@
 [Desktop Entry]
+Name=JustTheme
+GenericName=JustTheme
 Comment=Set the theme according to the daytime
 Comment[it]=Imposta il tema in base all'ora del giorno
-Encoding=UTF-8
-Exec=~/.JustTheme.sh
-GenericName=JustTheme
+Categories=GNOME;
+Exec=sh -c "$HOME/.JustTheme.sh"
 Icon=application-x-executable
-Name=JustTheme
-Terminal=false
 Type=Application
-X-KDE-SubstituteUID=false
