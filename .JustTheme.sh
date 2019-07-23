@@ -15,8 +15,6 @@ currenttime=$(date +%H:%M:%S);
 
 while true; do 
 	
-	clear;
-	
 	if [[ "$gnome_theme_light" == "" ]] || [[ "$gnome_theme_dark" == "" ]]; then
 		gnome_theme_light="Adwaita";
 		gnome_theme_dark="Adwaita-dark";
