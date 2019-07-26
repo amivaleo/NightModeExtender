@@ -17,8 +17,8 @@ while true; do
 		gnome_theme_dark="Adwaita-dark";
 	fi
 	
-	currentdday=$(date +%d);
-	currentmonth=$(date +%m);
+	currentdday=$(date -u +%d);
+	currentmonth=$(date -u +%m);
 	
 	if [[ "$lastmonth" != "$currentmonth" ]] && [[ "$lastday" != "$currentday" ]]; then
 		lastmonth="$currentmonth";
