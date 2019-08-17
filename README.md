@@ -1,10 +1,16 @@
 # JustAPerfectTheme
-Automatically change the theme from light to dark if the night-mode is enabled in GNOME. It can also change the gedit theme to make it more readable at night.
+This script automatically changes the interface theme at night, according to sunset and sunrise times. Those times are automatically fetched online depending on the user location. They are compared to the current time every 5 minutes.
+
+The script is active in background all the time, but it is asleep for most of the time and performs some checks once every 5 minutes.
+
+It is possible to customize a light theme and a dark theme indipendently for the user interface in GNOME. It is also possible to set other light and dark themes for specific applications like gedit.
 
 ## Installation
 Download the files and give the following command from the terminal:
 
 `$ chmod +x .JustTheme.sh ; mv .JustTheme.sh ~ ; mv JustTheme.desktop ~/.config/autostart/`
+
+Then reboot.
 
 ## Set custom themes
 Open the script `.JustTheme.sh` and set the name of your favourite themes in the first lines.
