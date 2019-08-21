@@ -9,6 +9,8 @@ gimp_theme_light="Symbolic-Inverted";
 gimp_theme_dark="Symbolic";
 libreoffice_theme_light="sifr_dark";
 libreoffice_theme_dark="sifr";
+gnome_latex_theme_light="classic";
+gnome_latex_theme_dark="oblivion";
 
 # default values
 lastmonth=0;
@@ -46,6 +48,7 @@ while true; do
 	if [[ "$currenttime" > "$sunset" ]] || [[ "$currenttime" < "$sunrise" ]]; then
 		$( gsettings set org.gnome.desktop.interface gtk-theme "$gnome_theme_dark" );
 		$( gsettings set org.gnome.gedit.preferences.editor scheme "$gedit_theme_dark" );
+		$( gsettings set org.gnome.gnome-latex.preferences.editor scheme "$gnome_latex_theme_dark" );
 		
 		sed -i '/SymbolStyle/c\<item oor:path="/org.openoffice.Office.Common/Misc"><prop oor:name="SymbolStyle" oor:op="fuse"><value>'$libreoffice_theme_dark'</value></prop></item>' ~/.var/app/org.libreoffice.LibreOffice/config/libreoffice/4/user/registrymodifications.xcu
 		
@@ -59,6 +62,7 @@ while true; do
 	else
 		$( gsettings set org.gnome.desktop.interface gtk-theme "$gnome_theme_light" );
 		$( gsettings set org.gnome.gedit.preferences.editor scheme "$gedit_theme_light" );
+		$( gsettings set org.gnome.gnome-latex.preferences.editor scheme "$gnome_latex_theme_light" );
 		
 		sed -i '/SymbolStyle/c\<item oor:path="/org.openoffice.Office.Common/Misc"><prop oor:name="SymbolStyle" oor:op="fuse"><value>'$libreoffice_theme_light'</value></prop></item>' ~/.var/app/org.libreoffice.LibreOffice/config/libreoffice/4/user/registrymodifications.xcu
 
