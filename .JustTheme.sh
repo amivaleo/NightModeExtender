@@ -47,6 +47,9 @@ if [ $? -eq 0 ]; then
 			sunrise=$(echo $sunrise | awk -F: '{ print ($1 * 3600) + ($2 * 60) + $3 }')
 			sunset=$(echo $sunset | awk -F: '{ print ($1 * 3600) + ($2 * 60) + $3 }')
 			
+			sunrise=$((sunrise+3600))
+			sunset=$((sunset+3600))
+			
 		fi
 		
 		eval "$(date +'today=%F now=%s')"
@@ -78,8 +81,6 @@ if [ $? -eq 0 ]; then
 		# during the day
 		else
 
-			echo $sunrise $currenttheme $sunset;
-
 			if [[ "$currenttheme" != "$gnome_theme_dark" ]]; then
 				$( gsettings set org.gnome.desktop.interface gtk-theme "$gnome_theme_dark" );
 				$( gsettings set org.gnome.gedit.preferences.editor scheme "$gedit_theme_dark" );
@@ -97,7 +98,7 @@ if [ $? -eq 0 ]; then
 
 		fi
 		
-		sleep 100;
+		sleep 1800;
 
 	done
 
