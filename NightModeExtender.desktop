@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=NightModeExtender
+GenericName=NightModeExtender
+Comment=Set the theme according to the night-mode switch status
+Comment[it]=Imposta il tema in base allo stato della modalità notte
+Categories=GNOME;
+Exec=sh -c "$HOME/.NightModeExtender.sh"
+Icon=application-x-executable
+Type=Application
