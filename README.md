@@ -4,9 +4,9 @@ This script automatically extends the changes in theme when the dark mode is ena
 It is possible to customize a light theme and a dark theme indipendently for the user interface in GNOME. It is also possible to set other light and dark themes for specific applications.
 
 ## Installation
-Download the files and give the following command from the terminal:
+Download the archive and unpack it. `cd` into the uncompressed folder abd give the following command from the terminal:
 
-`$ chmod +x NightModeExtender.sh ; mv .NightModeExtender.sh ~/.NightModeExtender.sh ; mv NightModeExtender.desktop ~/.config/autostart/`
+`$ chmod +x NightModeExtender.sh ; mv NightModeExtender.sh ~/.NightModeExtender.sh ; mv NightModeExtender.desktop ~/.config/autostart/`
 
 Then reboot.
 
